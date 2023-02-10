@@ -1,0 +1,4 @@
+airflow-webserver.pid
+airflow-worker.pid
+dags/__pycache__/*
+logs/*
