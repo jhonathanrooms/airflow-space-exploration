@@ -1,8 +1,10 @@
 # Airflow Space Exploration 
 
-Pipeline 
+Project of the Fundamentals of Apache Airflow course in Platzi, creation of a Data Pipeline that will come from one of the SpaceX satellites.
 
-## Goals
+![project](pictures/project.png)
+
+## Objetives
 
 Platzi's analyst and marketing teams need data from the students who have accessed the satellite and history information Spacex events, therefore we need help to execute the following tasks:
 
@@ -13,10 +15,28 @@ of the satellite.
 4. Send a message to the teams that the final data is
 available.
 
+### Workflow
+
+![workflow](pictures/workflow.png)
+
+### Graph
+
+![graph](pictures/graph.png)
+
 ## Requirements
 
 * Docker
 * Python >= 3
+
+## Enable Modification of the airflor.cfg 
+
+Enter the docker-compose file and within the next section **volumes**, add the following line:
+
+    - ./:/opt/airflow
+
+![docker-compose](pictures/docker-compose.png)
+
+With this, when raising our container, the configuration files will be moved to the path where our project is the most important being **airflow.cfg**.
 
 ## Setting Airflow Email Alerts Using Gmail
 
